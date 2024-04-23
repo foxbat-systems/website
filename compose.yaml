@@ -1,0 +1,14 @@
+name: ghpage
+services:
+  site:
+    build: app
+    restart: on-failure
+    ports:
+      - 9001:3000
+    develop:
+      watch:
+        - path: app/package.json
+          action: rebuild
+        - path: app/
+          action: sync
+          target: /home/node/app
