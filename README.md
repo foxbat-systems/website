@@ -6,3 +6,11 @@ The site code is contained under the [app](./app) directory and can be previewed
 > Run `docker compose up -d`
 
 Build & deployment is handled by GitHub Actions to GitHub Pages.
+
+## Contributing
+
+This repository follows a "Fast-Forward" merge strategy.
+
+## TODO
+- [ ] Create fast-forward-only merge action
+- [ ] Update docker compose file to utilize `docker watch` functionality
