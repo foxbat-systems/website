@@ -1,0 +1,32 @@
+---
+import Layout from '@layouts/Default.astro';
+let title = 'Our Service Areas';
+let description = 'Do you live in one of our service areas? Are you searching for professional services? Then give us a call today at Foxbat Systems so we can get started!';
+---
+<Layout title={title} description={description}>
+<section class="row py-xl-5" id="general">
+	<div class="col-xl-9 col-lg-10 col-12 mx-auto p-3 p-lg-5">
+		<div id="cms-breadcrumb" class="minimal-breadcrumb d-lg-block d-none">
+			<div class="trail"><a title="Home" href="/">Home</a></div>
+			<div class="trail"><a title="Service Areas" href="/near-me">Service Areas</a></div>
+		</div>
+		<h1>Service Areas for Foxbat Systems</h1>
+		<p>
+			Below is a list of service areas where we
+			provide our services. If you don't see your area
+			listed below, please give us a call. Our
+			professionals are here to provide you with
+			superb service.
+		</p>
+		<div class="grid grid-xl-2 grid-xxl-3 grid-gap-2 mb-3">
+			<a class="btn btn-sm btn-primary" href="/near-me/austin-tx-solar-solutions">Austin, TX</a>
+			<a class="btn btn-sm btn-primary" href="/near-me/dallas-tx-solar-solutions">Dallas, TX</a>
+			<a class="btn btn-sm btn-primary" href="/near-me/houston-tx-solar-solutions">Houston, TX</a>
+			<a class="btn btn-sm btn-primary" href="/near-me/san-antonio-tx-solar-solutions">San Antonio, TX</a>
+		</div>
+		<div class="ratio ratio-21x9">
+			<iframe src="//www.google.com/maps/embed/v1/place?key=AIzaSyAxTs2xcl6_m4XY_qPDYD6pxWK5wleC2Mw&q=[Houston]+TX"></iframe>
+		</div>
+	</div>
+</section>
+</Layout>

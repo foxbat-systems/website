@@ -1,0 +1,70 @@
+---
+import Header from '@components/Header.astro';
+import Footer from '@components/Footer.astro';
+import CTA from '@components/CTA.astro';
+
+const schema = {
+	name: "Foxbat Systems LLC",
+	url: "https://foxbatsystems.com",
+	logo: "https://foxbatsystems.com/images/companyLogo.png",
+	image: "https://foxbatsystems.com/images/companyLogo.png",
+	telephone: "760-666-0656",
+	address: {
+		streetAddress: "802 E Richey Road",
+		addressLocality: "Houston",
+		addressRegion: "TX",
+		postalCode: "77073",
+	},
+};
+
+interface Props {
+	title?: string,
+	description?: string
+}
+let {
+	title = schema.name,
+	description = 'Foxbat Systems is a commercial solar solutions company that refines sunlight for power generation, agrivoltaics, and waste management'
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta property="og:type" content="website" />
+	<meta itemprop="logo" content="https://foxbatsystems.com/images/logo.png" />
+
+	<link href="/images/favicon.png" rel="icon" type="image/png" />
+	<link href="/styles/theme.css" rel="stylesheet" type="text/css" />
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+	<script defer src="/styles/dependencies/bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+	<script defer src="/scripts/navigation-manager-app.min.js" type="text/javascript"></script>
+	<script defer src="/scripts/lightbox/lightbox.js" type="text/javascript"></script>
+	<script defer src="/scripts/anime.min.js"></script>
+	<script defer src="/scripts/animation-engine.min.js"></script>
+	<script defer src="/scripts/pagination.js"></script>
+	<script defer src="/scripts/init-lightbox.js"></script>
+	<script defer src="/scripts/nav-updater.js"></script>
+	<title>{(title !== schema.name) ? `${title} | `: ''}{schema.name}</title>
+	<meta name="description" itemprop="description" property="og:description" content={description} />
+	<meta property="og:title" content={title} />
+	<meta property="og:url" content="https://foxbatsystems.com" />
+</head>
+<body>
+<Header />
+	<main id="content">
+		<div class="bg-white">
+			<div class="container-fluid">
+				<slot />
+				<CTA />
+			</div>
+		</div>
+	</main>
+<Footer />
+</body>
+</html>

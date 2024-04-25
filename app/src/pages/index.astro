@@ -1,0 +1,680 @@
+---
+import Layout from '@layouts/Default.astro';
+let title = '';
+let description = '';
+---
+<Layout>
+
+<!-- START BANNER -->
+<section id="banner" class="position-relative">
+	<div
+		class="carousel slide carousel-fade"
+		data-bs-ride="carousel"
+		id="heroCarousel"
+	>
+		<div class="carousel-inner">
+			<div class="carousel-item active p-0">
+				<div class="overlay1"></div>
+				<div class="overlay2"></div>
+				<div class="overlay3"></div>
+				<div class="bg-picture-container">
+					<picture>
+						<source
+							media="(max-width:568px)"
+							type="image/webp"
+							srcset="/images/banners/banner-solar-panel-houston-m.webp"
+						/>
+						<source
+							type="image/webp"
+							srcset="/images/banners/banner-solar-panel-houston.webp"
+						/>
+						<img
+							src="/images/banners/banner-solar-panel-houston.jpg"
+							class="bg-picture"
+							alt="Second Banner Image"
+						/>
+					</picture>
+				</div>
+				<div class="carousel-caption row align-items-center">
+					<div
+						class="text-md-start col-12 col-md-8 col-lg-6 offset-md-1 animated-pop-in"
+					>
+						<p
+							class="display-4 text-primary f-prime text-uppercase"
+						>
+							Modular Solar Solutions
+						</p>
+						<p
+							class="h2 text-primary f-prime text-uppercase"
+						>
+							High Performance, Low Mass, Modular Power In
+							Space
+							<!--Helping Businesses Change Their Energy Management And Become Energy Independent-->
+						</p>
+						<div
+							class="row align-items-center justify-content-center"
+						>
+							<div
+								class="d-grid gap-2 d-md-block animated-pop-in"
+							>
+								<a
+									href="/contact-us"
+									class="btn btn-secondary m-1"
+								>
+									<span> Contact Us </span>
+								</a>
+								<a
+									href="tel:+1-760-666-0656"
+									class="btn btn-primary m-1"
+								>
+									<i class="fas fa-phone"></i> Call Today
+									760-666-0656
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END BANNER -->
+			<!-- START ABOUT US -->
+			<section class="row bg-dark overflow-hidden position-relative align-items-center">
+				<div class="col-xl-10 col-12 mx-auto zindex-1">
+					<div class="row align-items-center m-0 p-3">
+						<div
+							class="col-lg-11 col-12 align-self-center mx-auto p-md-5 text-center text-md-start"
+						>
+							<h1>
+								Modular, Sustainable, And Future-Proof
+								<!--Modular Solar Solutions You Can Trust-->
+								<!--The Reliable Solar Solutions Company in Houston You Can Trust-->
+							</h1>
+							<p>
+								<strong
+									>Based in Houston, Foxbat Systems
+									designs, develops, and provides
+									modular solar solutions for space,
+									agriculture, and business.</strong
+								>
+								<!--<strong>Based in Houston, Foxbat Systems is a commercial solar solutions company that refines sunlight for power generation, agrivoltaics, and waste management.</strong>-->
+							</p>
+							<p>
+								Our mission is to help space systems,
+								farms, and businesses become energy
+								independent and reliably sustainable.
+								Our vision is to create decentralized
+								sustainable energy webs that empower
+								space systems, farms, and businesses.
+								We're just rearranging the order here
+								and prioritizing space systems as the
+								top priority.
+								<!--Our mission is to help businesses, farms, and space systems become energy independent and reliably sustainable. Our vision is to create decentralized sustainable energy webs that empower businesses, farms, and space systems.-->
+								<!--Our mission is to create sustainable, local energy webs that empower businesses to produce their own energy. Our vision is to help businesses change their energy management and become energy independent.-->
+							</p>
+							<div class="mt-3">
+								<a
+									href="/our-founder"
+									class="btn btn-secondary"
+								>
+									Read More
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- END ABOUT US -->
+			<!-- START ICONS -->
+			<section
+				class="row bg-dark overflow-hidden position-relative"
+			>
+				<div
+					class="col-12 text-center mx-auto p-3 p-md-5 zindex-1"
+				>
+					<h2 class="h4">
+						Our Advantages
+						<!--Why Choose Foxbat Systems As Your Energy Solution?-->
+					</h2>
+					<div
+						class="row d-flex justify-content-center align-items-center p-2"
+					>
+						<div
+							class="col-12 col-sm-6 col-md-3 card-i p-1 m-0 align-self-stretch"
+						>
+							<div class="p-0">
+								<picture>
+									<source
+										type="image/webp"
+										srcset="/images/icons/i-cost.webp"
+									/>
+									<img
+										src="/images/icons/i-cost.png"
+										alt="cost icon"
+										class="img-l"
+									/>
+								</picture>
+								<div class="container-i">
+									<p class="text-light">
+										High Power<!--Cost Savings & Profits-->
+									</p>
+								</div>
+							</div>
+						</div>
+						<div
+							class="col-12 col-sm-6 col-md-3 card-i p-1 m-0 align-self-stretch"
+						>
+							<div class="p-0">
+								<picture>
+									<source
+										type="image/webp"
+										srcset="/images/icons/i-sustain.webp"
+									/>
+									<img
+										src="/images/icons/i-sustain.png"
+										alt="sustain icon"
+										class="img-l"
+									/>
+								</picture>
+								<div class="container-i">
+									<p class="text-light">
+										Self-Sustainable
+									</p>
+								</div>
+							</div>
+						</div>
+						<div
+							class="col-12 col-sm-6 col-md-3 card-i p-1 m-0 align-self-stretch"
+						>
+							<div class="p-0">
+								<picture>
+									<source
+										type="image/webp"
+										srcset="/images/icons/i-long-term.webp"
+									/>
+									<img
+										src="/images/icons/i-long-term.png"
+										alt="longterm icon"
+										class="img-l"
+									/>
+								</picture>
+								<div class="container-i">
+									<p class="text-light">
+										Future-Proof <!--Engineering-->
+									</p>
+								</div>
+							</div>
+						</div>
+						<div
+							class="col-12 col-sm-6 col-md-3 card-i p-1 m-0 align-self-stretch"
+						>
+							<div class="p-0">
+								<picture>
+									<source
+										type="image/webp"
+										srcset="/images/icons/i-power.webp"
+									/>
+									<img
+										src="/images/icons/i-power.png"
+										alt="power icon"
+										class="img-l"
+									/>
+								</picture>
+								<div class="container-i">
+									<p class="text-light">
+										Small Footprint<!--High Power-->
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- END ICONS -->
+			<!-- START LOGOS -->
+			<section
+				class="row bg-dark overflow-hidden position-relative"
+			>
+				<div
+					class="col-12 text-center mx-auto p-3 p-md-5 zindex-1"
+				>
+					<h2>
+						Impacts In Space & On Earth. We Refine Sunlight
+						For …
+						<!--What Impact Do We Make? 
+	<span class="d-block h3">Through Our Partners, We Are Able To Refine Sunlight For</span>-->
+					</h2>
+					<div
+						class="row d-flex justify-content-center align-items-center p-2"
+					>
+						<div
+							class="col-12 col-sm-6 col-md-4 col-lg card-i p-1 m-0 align-self-stretch"
+						>
+							<div class="p-0">
+								<picture>
+									<source
+										type="image/webp"
+										srcset="/images/icons/i-power.webp"
+									/>
+									<img
+										src="/images/icons/i-power.png"
+										alt="power icon"
+										class="img-l"
+									/>
+								</picture>
+								<div class="container-i">
+									<p class="text-light">
+										Electrical Power Generation
+									</p>
+								</div>
+							</div>
+						</div>
+						<div
+							class="col-12 col-sm-6 col-md-4 col-lg card-i p-1 m-0 align-self-stretch"
+						>
+							<div class="p-0">
+								<picture>
+									<source
+										type="image/webp"
+										srcset="/images/icons/i-argivoltaics.webp"
+									/>
+									<img
+										src="/images/icons/i-argivoltaics.png"
+										alt="argivolatics icon"
+										class="img-l"
+									/>
+								</picture>
+								<div class="container-i">
+									<p class="text-light">
+										Agrivoltaics
+									</p>
+								</div>
+							</div>
+						</div>
+						<div
+							class="col-12 col-sm-6 col-md-4 col-lg card-i p-1 m-0 align-self-stretch"
+						>
+							<div class="p-0">
+								<picture>
+									<source
+										type="image/webp"
+										srcset="/images/icons/i-waste.webp"
+									/>
+									<img
+										src="/images/icons/i-waste.png"
+										alt="waste icon"
+										class="img-l"
+									/>
+								</picture>
+								<div class="container-i">
+									<p class="text-light">
+										Waste Management
+									</p>
+								</div>
+							</div>
+						</div>
+						<div
+							class="col-12 col-sm-6 col-md-4 col-lg card-i p-1 m-0 align-self-stretch"
+						>
+							<div class="p-0">
+								<picture>
+									<source
+										type="image/webp"
+										srcset="/images/icons/i-biofuel.webp"
+									/>
+									<img
+										src="/images/icons/i-biofuel.png"
+										alt="biofuel icon"
+										class="img-l"
+									/>
+								</picture>
+								<div class="container-i">
+									<p class="text-light">
+										Biofuel Production
+									</p>
+								</div>
+							</div>
+						</div>
+						<div
+							class="col-12 col-sm-6 col-md-4 col-lg card-i p-1 m-0 align-self-stretch"
+						>
+							<div class="p-0">
+								<picture>
+									<source
+										type="image/webp"
+										srcset="/images/icons/i-water.webp"
+									/>
+									<img
+										src="/images/icons/i-water.png"
+										alt="water icon"
+										class="img-l"
+									/>
+								</picture>
+								<div class="container-i">
+									<p class="text-light">
+										Water Distillation, Heating, And
+										Recovery
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- END LOGOS -->
+			<!-- START ARTICLES -->
+			<section class="row bg-dark overflow-hidden p-3 p-md-5">
+				<div
+					class="col-12 col-lg-7 align-self-center p-3 text-center text-md-start order-1"
+				>
+					<div class="p-0 p-md-5">
+						<h2>
+							Take Our Advice
+							<span class="d-block f-second"
+								>Solar Is Key For Energy Generation In
+								Space And On Earth</span
+							>
+							<!--Take Our Advice
+		<span class="d-block f-second">About Solar Panel Development</span>-->
+						</h2>
+						<ul class="timeline mb-0 text-start">
+							<li>
+								<a
+									href="/articles/harnessing-the-power-of-the-sun-understanding-foxbat-systems"
+									class="timeline-title"
+								>
+									Harnessing the Power of the Sun:
+									Understanding Foxbat Systems
+								</a>
+								<p>
+									In a world that is increasingly
+									turning to sustainable and renewable
+									energy sources, Foxbat Systems
+									emerges as a pioneering player in
+									the field of commercial solar
+									solutions. This innovative company
+									has not only harnessed the immense
+									potential of sunlight for power
+									generation but has also ventured
+									[&hellip;]
+								</p>
+							</li>
+
+							<li>
+								<a
+									href="/articles/space-based-solar-powers-impact-on-earths-agriculture-businesses-and-energy-generation"
+									class="timeline-title"
+								>
+									Space-Based Solar Power's Impact on
+									Earth's Agriculture, Businesses, and
+									Energy Generation
+								</a>
+								<p>
+									In man&rsquo;s endeavor for
+									sustainable energy solutions,
+									space-based solar power has emerged
+									as a revolutionary concept that
+									holds the potential to revolutionize
+									clean energy generation and also
+									offers promising benefits for
+									Earth's farmland, businesses, and
+									economies. Space-based solar power
+									involves the deployment [&hellip;]
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div
+					class="col-12 col-lg-5 align-self-stretch bgcover p-0 order-2"
+				>
+					<div class="bg-picture-container h-100">
+						<picture>
+							<source
+								media="(max-width:568px)"
+								type="image/webp"
+								srcset="/images/banners/bg-articles-solar-panel-houston-m.webp"
+							/>
+							<source
+								type="image/webp"
+								srcset="/images/banners/bg-articles-solar-panel-houston.webp"
+							/>
+							<img
+								src="/images/banners/bg-articles-solar-panel-houston.jpg"
+								alt="First Banner Image"
+								class="bg-picture-center"
+							/>
+						</picture>
+					</div>
+				</div>
+			</section>
+			<!-- END ARTICLES -->
+			<!-- START FAQ -->
+			<section
+				class="row bg-tertiary overflow-hidden position-relative"
+			>
+				<div class="col-xl-10 col-12 mx-auto zindex-1">
+					<div class="row align-items-center m-0 p-3 p-md-5">
+						<div
+							class="col-12 align-self-center mx-auto text-center text-md-start p-0"
+						>
+							<div class="p-0">
+								<h2>FAQs</h2>
+								<div
+									class="accordion"
+									id="faq-accordion"
+									itemscope=""
+									itemtype="https://schema.org/FAQPage"
+								>
+									<div
+										class="accordion-item shadow bg-dark mb-3 radius"
+										itemscope=""
+										itemprop="mainEntity"
+										itemtype="https://schema.org/Question"
+									>
+										<button
+											class="btn btn-sm btn-faq w-100"
+											type="button"
+											data-bs-toggle="collapse"
+											data-bs-target="#collapseOne"
+										>
+											<h3
+												class="mb-0 h5"
+												itemprop="name"
+											>
+												What Is Future-Proof
+												Engineering?
+												<!--How do you help us reduce costs?-->
+											</h3>
+										</button>
+										<div
+											id="collapseOne"
+											class="accordion-collapse collapse show"
+											itemscope=""
+											itemprop="acceptedAnswer"
+											itemtype="https://schema.org/Answer"
+										>
+											<div
+												class="p-3"
+												itemprop="text"
+											>
+												<p class="p-3 m-0">
+													Future-proof
+													engineering is
+													designing technology
+													to be compatible
+													with future
+													technologies that
+													aren’t currently in
+													the marketplace. Its
+													goal is to make
+													scalable technology
+													that is easily
+													upgradeable and
+													convertible with
+													future systems,
+													processes, and
+													technologies.
+													<!--Our systems generate power onsite and give you flexible, long term, reliable power. Our systems are designed to give you predictable energy stability, while also giving you the option to sell your energy back to the Grid.-->
+												</p>
+											</div>
+										</div>
+									</div>
+									<div
+										class="accordion-item shadow bg-dark mb-3 radius"
+										itemscope=""
+										itemprop="mainEntity"
+										itemtype="https://schema.org/Question"
+									>
+										<button
+											class="btn btn-sm btn-faq w-100"
+											type="button"
+											data-bs-toggle="collapse"
+											data-bs-target="#collapseTwo"
+										>
+											<h3
+												class="mb-0 h5"
+												itemprop="name"
+											>
+												What are Modular Solar
+												Solutions?
+											</h3>
+										</button>
+										<div
+											id="collapseTwo"
+											class="accordion-collapse collapse"
+											itemscope=""
+											itemprop="acceptedAnswer"
+											itemtype="https://schema.org/Answer"
+										>
+											<div
+												class="p-3"
+												itemprop="text"
+											>
+												<p class="p-3 m-0">
+													Solutions compatible
+													with future
+													technologies. <a
+														href="/our-solutions"
+														>Our solutions</a
+													> are easily upgradable
+													for future photovoltaic
+													cell chemistries and
+													require very little servicing.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div
+										class="accordion-item shadow bg-dark mb-3 radius"
+										itemscope=""
+										itemprop="mainEntity"
+										itemtype="https://schema.org/Question"
+									>
+										<button
+											class="btn btn-sm btn-faq w-100"
+											type="button"
+											data-bs-toggle="collapse"
+											data-bs-target="#collapseThree"
+										>
+											<h3
+												class="mb-0 h5"
+												itemprop="name"
+											>
+												What Kind Of Modules Do
+												You Produce?
+											</h3>
+										</button>
+										<div
+											id="collapseThree"
+											class="accordion-collapse collapse"
+											itemscope=""
+											itemprop="acceptedAnswer"
+											itemtype="https://schema.org/Answer"
+										>
+											<div
+												class="p-3"
+												itemprop="text"
+											>
+												<p class="p-3 m-0">
+													We engineer and
+													deploy 1u, 2u, 3u,
+													6u, and 12u packages
+													in 8 weeks.
+													<!--Using land for agriculture and solar power generation. Our agrivoltaics solutions will boost your daily energy production and maximize your peak efficiency. And offer additional revenue streams-->
+												</p>
+											</div>
+										</div>
+									</div>
+									<div
+										class="accordion-item shadow bg-dark mb-3 radius"
+										itemscope=""
+										itemprop="mainEntity"
+										itemtype="https://schema.org/Question"
+									>
+										<button
+											class="btn btn-sm btn-faq w-100"
+											type="button"
+											data-bs-toggle="collapse"
+											data-bs-target="#collapseFour"
+										>
+											<h3
+												class="mb-0 h5"
+												itemprop="name"
+											>
+												What Is The Space Market
+												For Cubesat Modules?
+												<!--What if it rains?-->
+											</h3>
+										</button>
+										<div
+											id="collapseFour"
+											class="accordion-collapse collapse"
+											itemscope=""
+											itemprop="acceptedAnswer"
+											itemtype="https://schema.org/Answer"
+										>
+											<div
+												class="p-3"
+												itemprop="text"
+											>
+												<p class="p-3 m-0">
+													Since their
+													conception, over
+													2,100 CubeSats have
+													been sent to space.
+													They now constitute
+													nearly 30% of all
+													satellites launched,
+													40% of satellites
+													launched under
+													600kg, and 11% of
+													all total payload
+													mass combined.
+													Nearly every single
+													rocket now carries
+													at least one to
+													orbit & some
+													missions are
+													comprised entirely
+													of them. In 2023
+													alone, 600 missions
+													have been announced,
+													with nearly 200
+													launched in the
+													first five months
+													already.
+													<!--No problem. Our collectors are impact proof and covered with weather-proof layers that won't impact your energy production and usage.-->
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- END FAQ -->
+</Layout>

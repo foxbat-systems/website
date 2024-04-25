@@ -1,0 +1,23 @@
+---
+import Layout from '@layouts/Default.astro';
+let title = 'Thank You for Contacting Foxbat Systems';
+let description = 'Thank you for contacting Foxbat Systems with your service request.';
+---
+<Layout title={title} description={description}>
+<section class="row py-xl-5" id="general">
+	<div
+		class="col-xl-9 col-lg-10 col-12 mx-auto p-3 p-lg-5"
+	>
+		<div id="cms-breadcrumb" class="minimal-breadcrumb d-lg-block d-none">
+			<div class="trail"><a title="Home" href="/">Home</a></div>
+			<div class="trail"><a title="Contact Us - Thanks" href="/thanks">Contact Us - Thanks</a></div>
+		</div>
+		<h1>Thank You!</h1>
+		<p>
+			Thank you for contacting Foxbat Systems with
+			your service request. We aim to respond to your
+			request within 48 business hours!
+		</p>
+	</div>
+</section>
+</Layout>

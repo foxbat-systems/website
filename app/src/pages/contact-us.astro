@@ -1,0 +1,31 @@
+---
+import Layout from '@layouts/Default.astro';
+let title = 'Contact Foxbat Systems Today!';
+let description = 'Contact Foxbat Systems, your professionals providing quality services in Houston, TX.';
+---
+<Layout title={title} description={description}>
+<section class="row py-xl-5" id="general">
+	<div class="col-xl-9 col-lg-10 col-12 mx-auto p-3 p-lg-5">
+		<div id="cms-breadcrumb" class="minimal-breadcrumb d-lg-block d-none">
+			<div class="trail"><a title="Home" href="/">Home</a></div>
+			<div class="trail"><a title="Contact Us" href="/contact-us">Contact Us</a></div>
+		</div>
+		<h1>Contact Foxbat Systems</h1>
+		<div class="row">
+			<div class="col-12 col-xl-7 pb-4"></div>
+			<div class="col-12 col-xl-5">
+				<a class="btn btn-primary w-100 mb-3" href="tel:+1760-666-0656"><i class="mr-1 fas fa-phone"></i> 760-666-0656</a>
+				<div class="shadow bg-white">
+					<div class="px-3 pt-3">
+						<h4 class="text-center"><i class="fas fa-map-marker-alt text-primary"></i> Find Us!</h4>
+					</div>
+					<div class="ratio ratio-4x3">
+						<iframe src="//www.google.com/maps/embed/v1/place?key=AIzaSyAxTs2xcl6_m4XY_qPDYD6pxWK5wleC2Mw&q=[Houston]+TX"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+</Layout>
