@@ -1,5 +1,11 @@
 ---
-
+const menuLinks = [
+	{ href: '/', label: 'Home' },
+	{ href: '/our-solutions', label: 'Our Solutions' },
+	{ href: '/our-impact', label: 'Our Impact' },
+	{ href: '/our-founder', label: 'Our Founder' },
+	{ href: '/contact-us', label: 'Contact Us' }
+];
 ---
 <a class="skip-main" href="#content">Skip to main content</a>
 <!-- START SMALL NAVIGATION -->
@@ -32,27 +38,9 @@
 				<span>Menu</span>
 			</div>
 			<div class="navigation-links">
-				<div>
-					<a href="/">Home</a>
-				</div>
-				<div>
-					<a href="/our-solutions">Our Solutions</a>
-				</div>
-				<div>
-					<a href="/our-impact">Our Impact</a>
-				</div>
-				<div>
-					<a href="/our-founder">Our Founder</a>
-				</div>
-				<div>
-					<a href="/our-media">Our Media</a>
-				</div>
-				<div>
-					<a href="/careers">Careers</a>
-				</div>
-				<div>
-					<a href="/contact-us">Contact Us</a>
-				</div>
+				{menuLinks.map(link => <div>
+					<a href={link.href}>{link.label}</a>
+				</div>)}
 			</div>
 		</div>
 	</div>
@@ -84,48 +72,12 @@
 		</div>
 		<div class="col-9" id="nav-v2-1-contents">
 			<div class="row align-items-center" id="nav-v2-1-links">
-				<div class="col nav-v2-1-link">
-					<div class="nav-v2-1-load-line" role="presentation"></div>
-					<a href="/">
-						<span>Home</span>
-					</a>
-				</div>
-				<div class="col nav-v2-1-link">
-					<div class="nav-v2-1-load-line" role="presentation"></div>
-					<a href="/our-solutions">
-						<span>Our Solutions</span>
-					</a>
-				</div>
-				<div class="col nav-v2-1-link">
-					<div class="nav-v2-1-load-line" role="presentation"></div>
-					<a href="/our-impact">
-						<span>Our Impact</span>
-					</a>
-				</div>
-				<div class="col nav-v2-1-link">
-					<div class="nav-v2-1-load-line" role="presentation"></div>
-					<a href="/our-founder">
-						<span>Our Founder</span>
-					</a>
-				</div>
-				<div class="col nav-v2-1-link">
-					<div class="nav-v2-1-load-line" role="presentation"></div>
-					<a href="/our-media">
-						<span>Our Media</span>
-					</a>
-				</div>
-				<div class="col nav-v2-1-link">
-					<div class="nav-v2-1-load-line" role="presentation"></div>
-					<a href="/careers">
-						<span>Careers</span>
-					</a>
-				</div>
-				<div class="col nav-v2-1-link">
-					<div class="nav-v2-1-load-line" role="presentation"></div>
-					<a href="/contact-us">
-						<span>Contact Us</span>
-					</a>
-				</div>
+				{menuLinks.map(link => <div class="col nav-v2-1-link">
+						<div class="nav-v2-1-load-line" role="presentation"></div>
+						<a href={link.href}>
+							<span>{link.label}</span>
+						</a>
+					</div>)}
 			</div>
 		</div>
 	</section>
