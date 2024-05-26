@@ -17,6 +17,9 @@ const schema = {
 	},
 };
 
+const faviconFile = '/favicon.svg';
+const faviconURL = new URL(faviconFile, Astro.url);
+
 interface Props {
 	title?: string,
 	description?: string
@@ -33,7 +36,7 @@ let {
 	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-	<link href="/favicon.svg" rel="icon" type="image/png" />
+	<link href={faviconFile} rel="icon" type="image/png" />
 	<link href="/styles/theme.css" rel="stylesheet" type="text/css" />
 	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -55,7 +58,7 @@ let {
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content={`${(title !== schema.name ? title+' | ': '')}${schema.name}`} />
 	<meta property="og:url" content="https://foxbatsystems.com" />
-	<meta property="og:image" content="https://foxbatsystems.com/images/logo-dark.svg" />
+	<meta property="og:image" content={faviconURL} />
 	<meta property="og:image:alt" content="Foxbat Systems Logo" />
 	<meta property="og:description" content={description} />
 	<!-- SEO -->
