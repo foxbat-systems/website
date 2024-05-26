@@ -32,8 +32,6 @@ let {
 <head>
 	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta property="og:type" content="website" />
-	<meta itemprop="logo" content="https://foxbatsystems.com/images/logo-dark.svg" />
 
 	<link href="/favicon.svg" rel="icon" type="image/png" />
 	<link href="/styles/theme.css" rel="stylesheet" type="text/css" />
@@ -50,10 +48,18 @@ let {
 	<script defer src="/scripts/pagination.js"></script>
 	<script defer src="/scripts/init-lightbox.js"></script>
 	<script defer src="/scripts/nav-updater.js"></script>
+	<!-- Standard Meta -->
 	<title>{(title !== schema.name) ? `${title} | `: ''}{schema.name}</title>
-	<meta name="description" itemprop="description" property="og:description" content={description} />
-	<meta property="og:title" content={title} />
+	<meta name="description" property="og:description" content={description} />
+	<!-- OpenGraph Tags -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content={`${(title !== schema.name ? title+' | ': '')}${schema.name}`} />
 	<meta property="og:url" content="https://foxbatsystems.com" />
+	<meta property="og:image" content="https://foxbatsystems.com/images/logo-dark.svg" />
+	<meta property="og:image:alt" content="Foxbat Systems Logo" />
+	<meta property="og:description" content={description} />
+	<!-- SEO -->
+	<meta name="msvalidate.01" content="7D4F9B8528D2D9F54299D30349ECE6F4" />
 </head>
 <body>
 <Header />
